@@ -127,7 +127,7 @@ python demo.py
 
 ***
 
-
+# Attention Series
 ### 1. External Attention Usage
 #### 1.1. Paper
 ["Beyond Self-attention: External Attention using Two Linear Layers for Visual Tasks"](https://arxiv.org/abs/2105.02358)
@@ -1253,6 +1253,176 @@ if __name__ == "__main__":
 ```
 
 ***
+
+
+
+# MLP Series
+
+- Pytorch implementation of ["RepMLP: Re-parameterizing Convolutions into Fully-connected Layers for Image Recognition---arXiv 2021.05.05"](https://arxiv.org/pdf/2105.01883v1.pdf)
+
+- Pytorch implementation of ["MLP-Mixer: An all-MLP Architecture for Vision---arXiv 2021.05.17"](https://arxiv.org/pdf/2105.01601.pdf)
+
+- Pytorch implementation of ["ResMLP: Feedforward networks for image classification with data-efficient training---arXiv 2021.05.07"](https://arxiv.org/pdf/2105.03404.pdf)
+
+- Pytorch implementation of ["Pay Attention to MLPs---arXiv 2021.05.17"](https://arxiv.org/abs/2105.08050)
+
+
+- Pytorch implementation of ["Sparse MLP for Image Recognition: Is Self-Attention Really Necessary?---arXiv 2021.09.12"](https://arxiv.org/abs/2109.05422)
+
+### 1. RepMLP Usage
+#### 1.1. Paper
+["RepMLP: Re-parameterizing Convolutions into Fully-connected Layers for Image Recognition"](https://arxiv.org/pdf/2105.01883v1.pdf)
+
+#### 1.2. Overview
+![](./model/img/repmlp.png)
+
+#### 1.3. Usage Code
+```python
+from fightingcv_attention.mlp.repmlp import RepMLP
+import torch
+from torch import nn
+
+N=4 #batch size
+C=512 #input dim
+O=1024 #output dim
+H=14 #image height
+W=14 #image width
+h=7 #patch height
+w=7 #patch width
+fc1_fc2_reduction=1 #reduction ratio
+fc3_groups=8 # groups
+repconv_kernels=[1,3,5,7] #kernel list
+repmlp=RepMLP(C,O,H,W,h,w,fc1_fc2_reduction,fc3_groups,repconv_kernels=repconv_kernels)
+x=torch.randn(N,C,H,W)
+repmlp.eval()
+for module in repmlp.modules():
+    if isinstance(module, nn.BatchNorm2d) or isinstance(module, nn.BatchNorm1d):
+        nn.init.uniform_(module.running_mean, 0, 0.1)
+        nn.init.uniform_(module.running_var, 0, 0.1)
+        nn.init.uniform_(module.weight, 0, 0.1)
+        nn.init.uniform_(module.bias, 0, 0.1)
+
+#training result
+out=repmlp(x)
+#inference result
+repmlp.switch_to_deploy()
+deployout = repmlp(x)
+
+print(((deployout-out)**2).sum())
+```
+
+### 2. MLP-Mixer Usage
+#### 2.1. Paper
+["MLP-Mixer: An all-MLP Architecture for Vision"](https://arxiv.org/pdf/2105.01601.pdf)
+
+#### 2.2. Overview
+![](./model/img/mlpmixer.png)
+
+#### 2.3. Usage Code
+```python
+from fightingcv_attention.mlp.mlp_mixer import MlpMixer
+import torch
+mlp_mixer=MlpMixer(num_classes=1000,num_blocks=10,patch_size=10,tokens_hidden_dim=32,channels_hidden_dim=1024,tokens_mlp_dim=16,channels_mlp_dim=1024)
+input=torch.randn(50,3,40,40)
+output=mlp_mixer(input)
+print(output.shape)
+```
+
+***
+
+### 3. ResMLP Usage
+#### 3.1. Paper
+["ResMLP: Feedforward networks for image classification with data-efficient training"](https://arxiv.org/pdf/2105.03404.pdf)
+
+#### 3.2. Overview
+![](./model/img/resmlp.png)
+
+#### 3.3. Usage Code
+```python
+from fightingcv_attention.mlp.resmlp import ResMLP
+import torch
+
+input=torch.randn(50,3,14,14)
+resmlp=ResMLP(dim=128,image_size=14,patch_size=7,class_num=1000)
+out=resmlp(input)
+print(out.shape) #the last dimention is class_num
+```
+
+***
+
+### 4. gMLP Usage
+#### 4.1. Paper
+["Pay Attention to MLPs"](https://arxiv.org/abs/2105.08050)
+
+#### 4.2. Overview
+![](./model/img/gMLP.jpg)
+
+#### 4.3. Usage Code
+```python
+from fightingcv_attention.mlp.g_mlp import gMLP
+import torch
+
+num_tokens=10000
+bs=50
+len_sen=49
+num_layers=6
+input=torch.randint(num_tokens,(bs,len_sen)) #bs,len_sen
+gmlp = gMLP(num_tokens=num_tokens,len_sen=len_sen,dim=512,d_ff=1024)
+output=gmlp(input)
+print(output.shape)
+```
+
+***
+
+### 5. sMLP Usage
+#### 5.1. Paper
+["Sparse MLP for Image Recognition: Is Self-Attention Really Necessary?"](https://arxiv.org/abs/2109.05422)
+
+#### 5.2. Overview
+![](./model/img/sMLP.jpg)
+
+#### 5.3. Usage Code
+```python
+from fightingcv_attention.mlp.sMLP_block import sMLPBlock
+import torch
+from torch import nn
+from torch.nn import functional as F
+
+if __name__ == '__main__':
+    input=torch.randn(50,3,224,224)
+    smlp=sMLPBlock(h=224,w=224)
+    out=smlp(input)
+    print(out.shape)
+```
+
+### 6. vip-mlp Usage
+#### 6.1. Paper
+["Vision Permutator: A Permutable MLP-Like Architecture for Visual Recognition"](https://arxiv.org/abs/2106.12368)
+
+#### 6.2. Usage Code
+```python
+from fightingcv_attention.mlp.vip-mlp import VisionPermutator
+import torch
+from torch import nn
+from torch.nn import functional as F
+
+if __name__ == '__main__':
+    input=torch.randn(1,3,224,224)
+    model = VisionPermutator(
+        layers=[4, 3, 8, 3], 
+        embed_dims=[384, 384, 384, 384], 
+        patch_size=14, 
+        transitions=[False, False, False, False],
+        segment_dim=[16, 16, 16, 16], 
+        mlp_ratios=[3, 3, 3, 3], 
+        mlp_fn=WeightedPermuteMLP
+    )
+    output=model(input)
+    print(output.shape)
+```
+
+
+
 
 # Acknowledgements
 During the development of this project, the following open-source projects provided significant help and support. We hereby express our sincere gratitude:

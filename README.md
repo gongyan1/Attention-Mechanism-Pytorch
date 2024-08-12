@@ -4,6 +4,22 @@ This repository contains an implementation of many attention mechanism models.
 # Change Log
 - [x] Published Initial Attention Models, 2024-8-12.
 
+# Quick Start
+## pip
+```
+pip install AttentionMechanism
+```
+
+## Clone Repository
+```
+git clone https://github.com/gongyan1/Attention-Mechanism-Pytorch
+```
+
+## Demo
+```
+python demo.py
+```
+
 
 # 目录
 

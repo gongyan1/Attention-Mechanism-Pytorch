@@ -2,9 +2,9 @@ from setuptools import find_packages, setup
 
 setup(
     name="AttentionMechanism",
-    version="1.0.1",
-    author="",
-    author_email="",
+    version="1.0.2",
+    author="gongyan",
+    author_email="gongyan2020@foxmail.com",
     description=(
         "This repository contains an implementation of many attention mechanism models."
     ),

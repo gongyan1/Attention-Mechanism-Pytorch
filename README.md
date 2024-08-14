@@ -130,7 +130,7 @@ python demo.py
 # Attention Series
 ### 1. External Attention Usage
 #### 1.1. Paper
-["Beyond Self-attention: External Attention using Two Linear Layers for Visual Tasks"](https://arxiv.org/abs/2105.02358)
+[Beyond Self-attention: External Attention using Two Linear Layers for Visual Tasks (TPAMI 2022)](https://arxiv.org/abs/2105.02358)
 
 #### 1.2. Overview
 ![](.//AttentionMechanism/model/img/External_Attention.png)
@@ -151,7 +151,7 @@ print(output.shape)
 
 ### 2. Self Attention Usage
 #### 2.1. Paper
-["Attention Is All You Need"](https://arxiv.org/pdf/1706.03762.pdf)
+[Attention Is All You Need (arXiv 2017.06.03)](https://arxiv.org/pdf/1706.03762.pdf)
 
 #### 1.2. Overview
 ![](.//AttentionMechanism/model/img/SA.png)
@@ -192,7 +192,7 @@ print(output.shape)
 
 ### 4. Squeeze-and-Excitation Attention Usage
 #### 4.1. Paper
-["Squeeze-and-Excitation Networks"](https://arxiv.org/abs/1709.01507)
+[Squeeze-and-Excitation Networks (CVPR 2018)](https://arxiv.org/abs/1709.01507)
 
 #### 4.2. Overview
 ![](.//AttentionMechanism/model/img/SE.png)
@@ -213,7 +213,7 @@ print(output.shape)
 
 ### 5. SK Attention Usage
 #### 5.1. Paper
-["Selective Kernel Networks"](https://arxiv.org/pdf/1903.06586.pdf)
+[Selective Kernel Networks (CVPR 2019)](https://arxiv.org/pdf/1903.06586.pdf)
 
 #### 5.2. Overview
 ![](.//AttentionMechanism/model/img/SK.png)
@@ -233,7 +233,7 @@ print(output.shape)
 
 ### 6. CBAM Attention Usage
 #### 6.1. Paper
-["CBAM: Convolutional Block Attention Module"](https://openaccess.thecvf.com/content_ECCV_2018/papers/Sanghyun_Woo_Convolutional_Block_Attention_ECCV_2018_paper.pdf)
+[CBAM: Convolutional Block Attention Module (ECCV 2018)](https://openaccess.thecvf.com/content_ECCV_2018/papers/Sanghyun_Woo_Convolutional_Block_Attention_ECCV_2018_paper.pdf)
 
 #### 6.2. Overview
 ![](.//AttentionMechanism/model/img/CBAM1.png)
@@ -257,7 +257,7 @@ print(output.shape)
 
 ### 7. BAM Attention Usage
 #### 7.1. Paper
-["BAM: Bottleneck Attention Module"](https://arxiv.org/pdf/1807.06514.pdf)
+[BAM: Bottleneck Attention Module (arXiv 2018.07.18)](https://arxiv.org/pdf/1807.06514.pdf)
 
 #### 7.2. Overview
 ![](.//AttentionMechanism/model/img/BAM.png)
@@ -278,7 +278,7 @@ print(output.shape)
 
 ### 8. ECA Attention Usage
 #### 8.1. Paper
-["ECA-Net: Efficient Channel Attention for Deep Convolutional Neural Networks"](https://arxiv.org/pdf/1910.03151.pdf)
+[ECA-Net: Efficient Channel Attention for Deep Convolutional Neural Networks (CVPR 2020)](https://arxiv.org/pdf/1910.03151.pdf)
 
 #### 8.2. Overview
 ![](.//AttentionMechanism/model/img/ECA.png)
@@ -299,7 +299,7 @@ print(output.shape)
 
 ### 9. DANet Attention Usage
 #### 9.1. Paper
-["Dual Attention Network for Scene Segmentation"](https://arxiv.org/pdf/1809.02983.pdf)
+[Dual Attention Network for Scene Segmentation (CVPR 2019)](https://arxiv.org/pdf/1809.02983.pdf)
 
 #### 9.2. Overview
 ![](.//AttentionMechanism/model/img/danet.png)
@@ -320,7 +320,7 @@ print(danet(input).shape)
 ### 10. Pyramid Split Attention Usage
 
 #### 10.1. Paper
-["EPSANet: An Efficient Pyramid Split Attention Block on Convolutional Neural Network"](https://arxiv.org/pdf/2105.14447.pdf)
+[EPSANet: An Efficient Pyramid Split Attention Block on Convolutional Neural Network (ACCV 2022)](https://arxiv.org/pdf/2105.14447.pdf)
 
 #### 10.2. Overview
 ![](.//AttentionMechanism/model/img/psa.png)
@@ -343,7 +343,7 @@ print(output.shape)
 ### 11. Efficient Multi-Head Self-Attention Usage
 
 #### 11.1. Paper
-["ResT: An Efficient Transformer for Visual Recognition"](https://arxiv.org/abs/2105.13677)
+[ResT: An Efficient Transformer for Visual Recognition (NeurIPS 2021)](https://arxiv.org/abs/2105.13677)
 
 #### 11.2. Overview
 ![](.//AttentionMechanism/model/img/EMSA.png)
@@ -369,7 +369,7 @@ print(output.shape)
 ### 12. Shuffle Attention Usage
 
 #### 12.1. Paper
-["SA-NET: SHUFFLE ATTENTION FOR DEEP CONVOLUTIONAL NEURAL NETWORKS"](https://arxiv.org/pdf/2102.00240.pdf)
+[SA-NET: SHUFFLE ATTENTION FOR DEEP CONVOLUTIONAL NEURAL NETWORKS (ICASSP 2021)](https://arxiv.org/pdf/2102.00240.pdf)
 
 #### 12.2. Overview
 ![](.//AttentionMechanism/model/img/ShuffleAttention.jpg)
@@ -395,7 +395,7 @@ print(output.shape)
 ### 13. MUSE Attention Usage
 
 #### 13.1. Paper
-["MUSE: Parallel Multi-Scale Attention for Sequence to Sequence Learning"](https://arxiv.org/abs/1911.09483)
+[MUSE: Parallel Multi-Scale Attention for Sequence to Sequence Learning (arXiv 2019.10.17)](https://arxiv.org/abs/1911.09483)
 
 #### 13.2. Overview
 ![](.//AttentionMechanism/model/img/MUSE.png)
@@ -420,7 +420,7 @@ print(output.shape)
 ### 14. SGE Attention Usage
 
 #### 14.1. Paper
-[Spatial Group-wise Enhance: Improving Semantic Feature Learning in Convolutional Networks](https://arxiv.org/pdf/1905.09646.pdf)
+[Spatial Group-wise Enhance: Improving Semantic Feature Learning in Convolutional Networks (arXiv 2019.05.25)](https://arxiv.org/pdf/1905.09646.pdf)
 
 #### 14.2. Overview
 ![](.//AttentionMechanism/model/img/SGE.png)
@@ -445,7 +445,7 @@ print(output.shape)
 ### 15. A2 Attention Usage
 
 #### 15.1. Paper
-[A2-Nets: Double Attention Networks](https://arxiv.org/pdf/1810.11579.pdf)
+[A2-Nets: Double Attention Networks (NeurIPS 2018)](https://arxiv.org/pdf/1810.11579.pdf)
 
 #### 15.2. Overview
 ![](.//AttentionMechanism/model/img/A2.png)
@@ -468,7 +468,7 @@ print(output.shape)
 ### 16. AFT Attention Usage
 
 #### 16.1. Paper
-[An Attention Free Transformer](https://arxiv.org/pdf/2105.14103v1.pdf)
+[An Attention Free Transformer (arXiv 2021.09.21)](https://arxiv.org/pdf/2105.14103v1.pdf)
 
 #### 16.2. Overview
 ![](.//AttentionMechanism/model/img/AFT.jpg)
@@ -494,7 +494,7 @@ print(output.shape)
 #### 17.1. Paper
 
 
-[VOLO: Vision Outlooker for Visual Recognition"](https://arxiv.org/abs/2106.13112)
+[VOLO: Vision Outlooker for Visual Recognition (TPAMI 2022)](https://arxiv.org/abs/2106.13112)
 
 
 #### 17.2. Overview
@@ -520,7 +520,7 @@ print(output.shape)
 
 #### 18.1. Paper
 
-[Vision Permutator: A Permutable MLP-Like Architecture for Visual Recognition"](https://arxiv.org/abs/2106.12368)
+[Vision Permutator: A Permutable MLP-Like Architecture for Visual Recognition (TPAMI 2022)](https://arxiv.org/abs/2106.12368)
 
 #### 18.2. Overview
 ![](.//AttentionMechanism/model/img/ViP.png)
@@ -547,7 +547,7 @@ print(out.shape)
 
 #### 19.1. Paper
 
-[CoAtNet: Marrying Convolution and Attention for All Data Sizes"](https://arxiv.org/abs/2106.04803) 
+[CoAtNet: Marrying Convolution and Attention for All Data Sizes (NeurIPS 2021)](https://arxiv.org/abs/2106.04803) 
 
 #### 19.2. Overview
 None
@@ -574,7 +574,7 @@ print(out.shape)
 
 #### 20.1. Paper
 
-[Scaling Local Self-Attention for Parameter Efficient Visual Backbones"](https://arxiv.org/pdf/2103.12731.pdf) 
+[Scaling Local Self-Attention for Parameter Efficient Visual Backbones (CVPR 2021)](https://arxiv.org/pdf/2103.12731.pdf) 
 
 
 #### 20.2. Overview
@@ -604,7 +604,7 @@ print(output.shape)
 
 #### 21.1. Paper
 
-[Polarized Self-Attention: Towards High-quality Pixel-wise Regression"](https://arxiv.org/abs/2107.00782)  
+[Polarized Self-Attention: Towards High-quality Pixel-wise Regression (arXiv 2021.07.08)](https://arxiv.org/abs/2107.00782)  
 
 #### 21.2. Overview
 
@@ -631,7 +631,7 @@ print(output.shape)
 
 #### 22.1. Paper
 
-[Contextual Transformer Networks for Visual Recognition---arXiv 2021.07.26](https://arxiv.org/abs/2107.12292) 
+[Contextual Transformer Networks for Visual Recognition (TPAMI 2022)](https://arxiv.org/abs/2107.12292) 
 
 #### 22.2. Overview
 
@@ -659,7 +659,7 @@ print(output.shape)
 
 #### 23.1. Paper
 
-[Residual Attention: A Simple but Effective Method for Multi-Label Recognition---ICCV2021](https://arxiv.org/abs/2108.02456) 
+[Residual Attention: A Simple but Effective Method for Multi-Label Recognition (ICCV2021)](https://arxiv.org/abs/2108.02456) 
 
 
 #### 23.2. Overview
@@ -688,7 +688,7 @@ print(output.shape)
 
 #### 24.1. Paper
 
-[S²-MLPv2: Improved Spatial-Shift MLP Architecture for Vision---arXiv 2021.08.02](https://arxiv.org/abs/2108.01072) 
+[S²-MLPv2: Improved Spatial-Shift MLP Architecture for Vision (arXiv 2021.08.02)](https://arxiv.org/abs/2108.01072) 
 
 #### 24.2. Overview
 
@@ -715,7 +715,7 @@ print(output.shape)
 
 #### 25.1. Paper
 
-[Global Filter Networks for Image Classification---arXiv 2021.07.01](https://arxiv.org/abs/2107.00645) 
+[Global Filter Networks for Image Classification (NeurIPS 2021)](https://arxiv.org/abs/2107.00645) 
 
 
 #### 25.2. Overview
@@ -744,7 +744,7 @@ print(out.shape)
 
 #### 26.1. Paper
 
-[Rotate to Attend: Convolutional Triplet Attention Module---CVPR 2021](https://arxiv.org/abs/2010.03045) 
+[Rotate to Attend: Convolutional Triplet Attention Module (CVPR 2021)](https://arxiv.org/abs/2010.03045) 
 
 #### 26.2. Overview
 
@@ -769,7 +769,7 @@ print(output.shape)
 
 #### 27.1. Paper
 
-[Coordinate Attention for Efficient Mobile Network Design---CVPR 2021](https://arxiv.org/abs/2103.02907)
+[Coordinate Attention for Efficient Mobile Network Design (CVPR 2021)](https://arxiv.org/abs/2103.02907)
 
 
 #### 27.2. Overview
@@ -800,7 +800,7 @@ print(output.shape)
 
 #### 28.1. Paper
 
-[MobileViT: Light-weight, General-purpose, and Mobile-friendly Vision Transformer---ArXiv 2021.10.05](https://arxiv.org/abs/2103.02907)
+[MobileViT: Light-weight, General-purpose, and Mobile-friendly Vision Transformer (arXiv 2021.10.05)](https://arxiv.org/abs/2103.02907)
 
 
 #### 28.2. Overview
@@ -830,7 +830,7 @@ if __name__ == '__main__':
 
 #### 29.1. Paper
 
-[Non-deep Networks---ArXiv 2021.10.20](https://arxiv.org/abs/2110.07641)
+[Non-deep Networks (NeurIPS 2022)](https://arxiv.org/abs/2110.07641)
 
 
 #### 29.2. Overview
@@ -860,7 +860,7 @@ if __name__ == '__main__':
 
 #### 30.1. Paper
 
-[UFO-ViT: High Performance Linear Vision Transformer without Softmax---ArXiv 2021.09.29](https://arxiv.org/abs/2110.07641)
+[UFO-ViT: High Performance Linear Vision Transformer without Softmax (ECCV 2022)](https://arxiv.org/abs/2110.07641)
 
 
 #### 30.2. Overview
@@ -889,7 +889,7 @@ if __name__ == '__main__':
 
 #### 31.1. Paper
 
-[On the Integration of Self-Attention and Convolution](https://arxiv.org/pdf/2111.14556.pdf)
+[On the Integration of Self-Attention and Convolution (CVPR 2022)](https://arxiv.org/pdf/2111.14556.pdf)
 
 #### 31.2. Usage Code
 
@@ -910,7 +910,7 @@ if __name__ == '__main__':
 
 #### 32.1. Paper
 
-[Separable Self-attention for Mobile Vision Transformers---ArXiv 2022.06.06](https://arxiv.org/abs/2206.02680)
+[Separable Self-attention for Mobile Vision Transformers (arXiv 2022.06.06)](https://arxiv.org/abs/2206.02680)
 
 
 #### 32.2. Overview
@@ -938,7 +938,7 @@ if __name__ == '__main__':
 
 #### 33.1. Paper
 
-[Vision Transformer with Deformable Attention---CVPR2022](https://arxiv.org/abs/2201.00520)
+[Vision Transformer with Deformable Attention (CVPR2022)](https://arxiv.org/abs/2201.00520)
 
 #### 33.2. Usage Code
 
@@ -983,7 +983,7 @@ if __name__ == '__main__':
 
 #### 34.1. Paper
 
-[CROSSFORMER: A VERSATILE VISION TRANSFORMER HINGING ON CROSS-SCALE ATTENTION---ICLR 2022](https://arxiv.org/pdf/2108.00154.pdf)
+[CROSSFORMER: A VERSATILE VISION TRANSFORMER HINGING ON CROSS-SCALE ATTENTION (ICLR 2022)](https://arxiv.org/pdf/2108.00154.pdf)
 
 #### 34.2. Usage Code
 
@@ -1021,7 +1021,7 @@ if __name__ == '__main__':
 
 #### 35.1. Paper
 
-[Aggregating Global Features into Local Vision Transformer](https://arxiv.org/abs/2201.12903)
+[Aggregating Global Features into Local Vision Transformer (ICPR 2022)](https://arxiv.org/abs/2201.12903)
 
 #### 35.2. Usage Code
 
@@ -1059,7 +1059,7 @@ if __name__ == '__main__':
 
 #### 36.1. Paper
 
-[CCNet: Criss-Cross Attention for Semantic Segmentation](https://arxiv.org/abs/1811.11721)
+[CCNet: Criss-Cross Attention for Semantic Segmentation (ICCV 2019)](https://arxiv.org/abs/1811.11721)
 
 #### 36.2. Usage Code
 
@@ -1080,7 +1080,7 @@ if __name__ == '__main__':
 
 #### 37.1. Paper
 
-[Axial Attention in Multidimensional Transformers](https://arxiv.org/abs/1912.12180)
+[Axial Attention in Multidimensional Transformers (arXiv 2019.12.20)](https://arxiv.org/abs/1912.12180)
 
 #### 37.2. Usage Code
 
@@ -1258,20 +1258,20 @@ if __name__ == "__main__":
 
 # MLP Series
 
-- Pytorch implementation of ["RepMLP: Re-parameterizing Convolutions into Fully-connected Layers for Image Recognition---arXiv 2021.05.05"](https://arxiv.org/pdf/2105.01883v1.pdf)
+- Pytorch implementation of [RepMLP: Re-parameterizing Convolutions into Fully-connected Layers for Image Recognition (arXiv 2021.05.05)](https://arxiv.org/pdf/2105.01883v1.pdf)
 
-- Pytorch implementation of ["MLP-Mixer: An all-MLP Architecture for Vision---arXiv 2021.05.17"](https://arxiv.org/pdf/2105.01601.pdf)
+- Pytorch implementation of [MLP-Mixer: An all-MLP Architecture for Vision (NeurIPS 2021)](https://arxiv.org/pdf/2105.01601.pdf)
 
-- Pytorch implementation of ["ResMLP: Feedforward networks for image classification with data-efficient training---arXiv 2021.05.07"](https://arxiv.org/pdf/2105.03404.pdf)
+- Pytorch implementation of [ResMLP: Feedforward networks for image classification with data-efficient training (TPAMI 2022)](https://arxiv.org/pdf/2105.03404.pdf)
 
-- Pytorch implementation of ["Pay Attention to MLPs---arXiv 2021.05.17"](https://arxiv.org/abs/2105.08050)
+- Pytorch implementation of [Pay Attention to MLPs (NeurIPS 2021)](https://arxiv.org/abs/2105.08050)
 
 
-- Pytorch implementation of ["Sparse MLP for Image Recognition: Is Self-Attention Really Necessary?---arXiv 2021.09.12"](https://arxiv.org/abs/2109.05422)
+- Pytorch implementation of [Sparse MLP for Image Recognition: Is Self-Attention Really Necessary? (AAAI 2022)](https://arxiv.org/abs/2109.05422)
 
 ### 1. RepMLP Usage
 #### 1.1. Paper
-["RepMLP: Re-parameterizing Convolutions into Fully-connected Layers for Image Recognition"](https://arxiv.org/pdf/2105.01883v1.pdf)
+[RepMLP: Re-parameterizing Convolutions into Fully-connected Layers for Image Recognition (arXiv 2021.05.05)](https://arxiv.org/pdf/2105.01883v1.pdf)
 
 #### 1.2. Overview
 ![](./model/img/repmlp.png)
@@ -1313,7 +1313,7 @@ print(((deployout-out)**2).sum())
 
 ### 2. MLP-Mixer Usage
 #### 2.1. Paper
-["MLP-Mixer: An all-MLP Architecture for Vision"](https://arxiv.org/pdf/2105.01601.pdf)
+[MLP-Mixer: An all-MLP Architecture for Vision (NeurIPS 2021)](https://arxiv.org/pdf/2105.01601.pdf)
 
 #### 2.2. Overview
 ![](./model/img/mlpmixer.png)
@@ -1332,7 +1332,7 @@ print(output.shape)
 
 ### 3. ResMLP Usage
 #### 3.1. Paper
-["ResMLP: Feedforward networks for image classification with data-efficient training"](https://arxiv.org/pdf/2105.03404.pdf)
+[ResMLP: Feedforward networks for image classification with data-efficient training (TPAMI 2022)](https://arxiv.org/pdf/2105.03404.pdf)
 
 #### 3.2. Overview
 ![](./model/img/resmlp.png)
@@ -1352,7 +1352,7 @@ print(out.shape) #the last dimention is class_num
 
 ### 4. gMLP Usage
 #### 4.1. Paper
-["Pay Attention to MLPs"](https://arxiv.org/abs/2105.08050)
+[Pay Attention to MLPs (NeurIPS 2021)](https://arxiv.org/abs/2105.08050)
 
 #### 4.2. Overview
 ![](./model/img/gMLP.jpg)
@@ -1376,7 +1376,7 @@ print(output.shape)
 
 ### 5. sMLP Usage
 #### 5.1. Paper
-["Sparse MLP for Image Recognition: Is Self-Attention Really Necessary?"](https://arxiv.org/abs/2109.05422)
+[Sparse MLP for Image Recognition: Is Self-Attention Really Necessary? (AAAI 2022)](https://arxiv.org/abs/2109.05422)
 
 #### 5.2. Overview
 ![](./model/img/sMLP.jpg)
@@ -1397,7 +1397,7 @@ if __name__ == '__main__':
 
 ### 6. vip-mlp Usage
 #### 6.1. Paper
-["Vision Permutator: A Permutable MLP-Like Architecture for Visual Recognition"](https://arxiv.org/abs/2106.12368)
+[Vision Permutator: A Permutable MLP-Like Architecture for Visual Recognition (TPAMI 2022)](https://arxiv.org/abs/2106.12368)
 
 #### 6.2. Usage Code
 ```python
